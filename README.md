@@ -1,15 +1,15 @@
-# InstaCloud ☁️
+# DoodleCloud ☁️
 
 > **Turn Instagram into your personal, infinite cloud storage.**
 
-InstaCloud is a Proof-of-Concept (PoC) tool that uses Instagram's internal API to store unlimited files for free. By converting files into "Visual Noise" images and uploading them as DM doodles, we can bypass file type restrictions and use Instagram's servers as a backend.
+DoodleCloud is a Proof-of-Concept (PoC) tool that uses Instagram's internal API to store unlimited files for free. By converting files into "Visual Noise" images and uploading them as DM doodles, we can bypass file type restrictions and use Instagram's servers as a permanent backend.
 
-![InstaCloud GUI](https://i.ibb.co/60BYSkZD/Screenshot-20260202-153217.jpg)
+![DoodleCloud GUI](https://i.ibb.co/60BYSkZD/Screenshot-20260202-153217.jpg)
 
 ## 🚀 How It Works
 
 1.  **The Loophole:** Instagram allows users to send "doodles" in Direct Messages. These are essentially PNG images hosted on Facebook's CDN.
-2.  **Encoding:** InstaCloud takes any file (MP3, APK, ZIP, etc.) and converts its binary data into pixels, creating a "Visual Noise" PNG.
+2.  **Encoding:** DoodleCloud takes any file (MP3, APK, ZIP, etc.) and converts its binary data into pixels, creating a "Visual Noise" PNG.
 3.  **Chunking:** Large files are split into 20MB chunks to ensure high reliability and bypass resolution limits.
 4.  **Storage:** These images are uploaded to a private DM thread. The file metadata (filenames, chunk IDs) is stored in a **PostgreSQL** database.
 5.  **Retrieval:** When you download a file, the tool fetches the images, reads the pixels back into bytes, and stitches them together to restore your original file perfectly.
@@ -28,8 +28,8 @@ InstaCloud is a Proof-of-Concept (PoC) tool that uses Instagram's internal API t
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/depreciating/InstaCloud.git
-    cd InstaCloud
+    git clone https://github.com/depreciating/DoodleCloud.git
+    cd DoodleCloud
     ```
 
 2.  **Install Dependencies:**
@@ -55,7 +55,7 @@ InstaCloud is a Proof-of-Concept (PoC) tool that uses Instagram's internal API t
 ## 🖥️ Usage
 
 ### Option A: Graphical Interface (GUI)
-The recommended way to use InstaCloud.
+The recommended way to use DoodleCloud.
 
 1.  Run the web server:
     ```bash
@@ -79,23 +79,13 @@ For power users or headless servers.
 
 ## ⚠️ Disclaimer & Warning
 
-This project is a **Proof-of-Concept (PoC) steganographic experiment** and is for **Educational Purposes Only**.
-
-* **Terms of Service:** Using this tool violates Instagram's/Meta's Terms of Service. Automated use of the Doodle API is not officially supported and can lead to immediate account suspension or permanent bans.
-* **Burner Accounts Only:** **DO NOT** use your primary Instagram account. Use a dedicated burner account for any testing or usage.
-* **Data Reliability:** This is an experimental storage method, not a replacement for professional cloud services. Instagram may patch this loophole, clear DM caches, or delete "doodles" at any time without notice. Never upload data that you cannot afford to lose.
-* **Privacy & Encryption:** While files are converted into visual pixels, they are **not encrypted** by default. Meta's automated systems may still analyze these images. For true privacy, you must encrypt your files locally before uploading them to the system.
-* **No Liability:** The author is not responsible for any banned accounts, loss of data, or legal consequences resulting from the use of this software.
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have found a bug, want to add a new feature, or improve the documentation, feel free to open an issue or submit a pull request. 
-
-If you have any questions or would like to discuss the project, feel free to contact me through the platforms below.
+This project is for **Educational Purposes Only**.
+* Do not use your main Instagram account. Use a burner account.
+* I am not responsible for banned accounts or lost data.
 
 ## 👨‍💻 Credits
 
 **Created by [Depreciating](https://github.com/depreciating)**
 
 * **Telegram:** [@depreciatin](https://t.me/depreciatin)
-* **Discord Server:** [Server Link](https://discord.gg/YNHkj9kVFt)
+* **Discord:** [Server Invite](https://discord.gg/YNHkj9kVFt)

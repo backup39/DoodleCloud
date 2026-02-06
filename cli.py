@@ -186,7 +186,7 @@ def main():
     print(f"[+] Logged in as {USERNAME}")
 
     while True:
-        print("\n=== INSTA CLOUD ===")
+        print("\n=== DOODLE CLOUD ===")
         print("1. Upload")
         print("2. Retrieve")
         print("3. Delete")
